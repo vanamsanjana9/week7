@@ -18,7 +18,7 @@ pipeline {
                 bat 'docker rm -f mycontainer 2>nul || exit /b 0'
 
                 // Run the new container
-                bat 'docker run -d -p 5000:5000 --name mycontainer mypythonflaskapp'
+                bat 'docker run -d -p 5001:5001 --name mycontainer mypythonflaskapp'
             }
         }
     }
